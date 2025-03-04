@@ -1,0 +1,43 @@
+{
+	"name": "DelimitedText1",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"container": "source"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "Cereal Name",
+				"type": "String"
+			},
+			{
+				"name": "Manufacturer",
+				"type": "String"
+			},
+			{
+				"name": "Calories",
+				"type": "String"
+			},
+			{
+				"name": "Sodium",
+				"type": "String"
+			},
+			{
+				"name": "Dietary Fiber",
+				"type": "String"
+			}
+		]
+	}
+}
